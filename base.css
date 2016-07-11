@@ -1,7 +1,40 @@
 body{
     background-image: url(http://wallpaper.zone/img/2012370.jpg);
     background-position: center;
+    padding: 0px;
+    margin: 0px;
 }
 .taskbar{
-    
+    width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	opacity: .85;
+}
+.startBtn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+}
+.startMenu{
+    width: 220px;
+    height: 320px;
+    position: absolute;
+    bottom: 30px;
+    padding: 0px;
+	margin: 0px;
+	background-color: black;
+	opacity: .7;
+	border-style: solid;
+	border-color: #808080;
+	border-width: 1px;
+}
+
+
+.Linkerdinkers{
+    position: relative;
 }
