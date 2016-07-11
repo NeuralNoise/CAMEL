@@ -23,19 +23,6 @@ body{
 .startBtn:hover{
     background-color: white;
 }
-
-
-
-.startMenu.startAnima {
-    background-color: white;
-}
-
-
-
-
-
-
-
 .startMenu{
     width: 255px;
     height: 388px;
@@ -51,6 +38,18 @@ body{
 	border-width: .5px;
 	font-family: Ubuntu;
 	color: white;
+	
+	animation-name: anima;
+    transition: 5s ease-in-out;
+}
+@keyframes anima {
+    0% {
+        border-top-right-radius: 50px;
+    }
+    100% {
+        border-top-right-radius: 5px;
+    }
+    
 }
 .userImg{
     border-style: solid;
@@ -66,40 +65,54 @@ body{
     left: 50px;
 }
 
-.apple,.google,.amazon,gmail,.youtube,.facebook,.wiki,.instagram,.snapchat{position: relative;}
-.apple{
-    top: 200;
-    left: ;
+/*.startMenu:hover{
+    border-top-right-radius: 50px;
+    animation-name: anima;
+    transition: 2s ease-in-out;
 }
-/*.google{
-    top: ;
-    left: ;
+*/
+
+
+.apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat{position: relative;}
+.apple{
+    top: 400;
+    left: 0;
+}
+.google{
+    top: 300;
+    left: -45;
 }
 .amazon{
-    top: ;
-    left: ;
+    top: 350;
+    left: -90;
 }
-.gmail{
-    top: ;
-    left: ;
+.mail{
+    top: 217;
+    left: -131;
 }
 .youtube{
-    top: ;
-    left: ;
+    top: 265;
+    left: -181;
 }
 .facebook{
-    top: ;
-    left: ;
+    top: 170;
+    left: -225;
 }
 .wiki{
-    top: ;
-    left: ;
+    top: 130;
+    left: -265;
 }
 .instagram{
-    top: ;
-    left: ;
+    top: 85;
+    left: -310;
 }
 .snapchat{
-    top: ;
-    left: ;
-}*/
+    top: 40;
+    left: -355;
+}
+.windows{
+    position: relative;
+    top: 500;
+    left: 600;
+    
+}

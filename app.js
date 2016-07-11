@@ -1,12 +1,24 @@
-/*var start = document.getElementsByClassName('startMenu')
+/*function startAnima(){
+    document.getElementsByClassName("startMenu").className="startMenu";
+}
+*/
 
-document.getElementsByClassName('userImg').onclick = function() {
-    start.classList.add('startAnima');
-  } else {
-    this.innerHTML = 'Play';
-    var computedStyle = window.getComputedStyle(start),
-        marginLeft = computedStyle.getPropertyValue('margin-left');
-    start.style.marginLeft = marginLeft;
-    start.classList.remove('horizTranslate');    
-  }  
+/*function startAnima(){
+    document.getElementById("startBtn").className="startMenu";
 }*/
+
+
+//.style.animation = "animationName 2s linear 1";
+
+
+/*
+function startAnima(){
+    document.getElementsByClassName("startMenu").style.animation = "anima 2s";
+}*/
+
+
+
+function startAnima(){
+    console.log("test 1");
+    document.getElementsByClassName("startMenu").style.display = "none";
+}
