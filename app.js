@@ -22,3 +22,4 @@ function startAnima(){
     console.log("test 1");
     document.getElementsByClassName("startMenu").style.display = "none";
 }
+

@@ -73,6 +73,40 @@ body{
 */
 
 
+
+.google2{
+    width:20px; 
+    height:20px;
+    background-color: #262626;
+    padding: 5px;
+}
+.gmail2{
+    width:20px; 
+    height:20px;
+    background-color: #262626;
+    padding: 5px;
+}
+.youtube2{
+    width:20px; 
+    height:20px;
+    background-color: #262626;
+    padding: 5px;
+}
+.settings{
+    width:20px; 
+    height:20px;
+    /*background-color: #262626;*/
+    padding: 5px;
+}
+.power{
+    width:20px; 
+    height:20px;
+    /*background-color: #262626;*/
+    padding: 5px;
+}
+
+
+
 .apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat{position: relative;}
 .apple{
     top: 400;
