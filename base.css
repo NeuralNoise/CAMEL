@@ -21,14 +21,14 @@ body{
     bottom: 0;
 }
 .startBtn:hover{
-    background-color: white;
+    background-color: #4d4d4d;
 }
 .startMenu{
     width: 255px;
     height: 388px;
     position: absolute;
     bottom: 30px;
-    padding: 0px;
+    padding: 10px;
 	margin: 0px;
 	background-color: black;
 	opacity: .7;
@@ -51,7 +51,7 @@ body{
     }
     
 }
-.userImg{
+/*.userImg{
     border-style: solid;
     border-width: 0px;
     border-radius: 16px;
@@ -61,8 +61,23 @@ body{
 .userTxt{
     position: absolute;
     /*top: -25px;*/
-    bottom: 338px;
+   /* bottom: 338px;
     left: 50px;
+}*/
+
+/*style userImg*/
+.userImg{
+    margin-left: 5px;
+    margin-right: -1px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    width:30px; 
+    height:30px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: transparent;
+    border-radius: 29px;
 }
 
 /*.startMenu:hover{
@@ -71,54 +86,70 @@ body{
     transition: 2s ease-in-out;
 }
 */
-
-
-
-.google2{
-    width:20px; 
-    height:20px;
-    background-color: #262626;
-    padding: 5px;
+.mostUsed{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    color: #4d4d4d;
+    font-size: 14;
 }
-.gmail2{
-    width:20px; 
-    height:20px;
-    background-color: #262626;
-    padding: 5px;
+/*on hover highlight startmenu links background color*/
+#user:hover,.google2:hover, #google2:hover, .gmail2:hover, #gmail2:hover, .youtube2:hover, #youtube2:hover, .settings:hover, #settings:hover, .power:hover, #power:hover{
+    background-color: #4d4d4d;
 }
-.youtube2{
-    width:20px; 
-    height:20px;
-    background-color: #262626;
-    padding: 5px;
-}
-.settings{
+/*spacing (margin) and sizing around startmenu links*/
+.google2,.gmail2,.youtube2,.settings,.power{
+    margin: 5px;
     width:20px; 
     height:20px;
     /*background-color: #262626;*/
     padding: 5px;
 }
-.power{
-    width:20px; 
-    height:20px;
-    /*background-color: #262626;*/
-    padding: 5px;
+/*#google2,#gmail2,#youtube2,#settings,#power{
+    margin-bottom: 10px;
+}*/
+
+
+.apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat {
+    position: relative;
+    object-fit: contain;
+    height: 40px !important;
+    width: 40px !important;
+    padding: 5px !important;
+    margin: 0px !important;
+    background-color: rgba(26, 102, 255, .1);
+    border-style: solid !important;
+    border-color: transparent !important;
+    border-width: 1px !important;
+    border-radius: 6px;
+}
+
+.apple:hover,.google:hover,.amazon:hover,.mail:hover,.youtube:hover,.facebook:hover,.wiki:hover,.instagram:hover,.snapchat:hover{
+    background-color: rgba(26, 102, 255, .6);
+    border-style: solid !important;
+    border-color: rgb(26, 102, 255) !important;
+    border-width: 1px !important;
+    border-radius: 6px;
 }
 
 
 
-.apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat{position: relative;}
-.apple{
-    top: 400;
-    left: 0;
+/*
+.snapchat{
+    top: 40;
+    left: -355;
 }
-.google{
-    top: 300;
-    left: -45;
+.instagram{
+    top: 85;
+    left: -310;
 }
-.amazon{
-    top: 350;
-    left: -90;
+.wiki{
+    top: 130;
+    left: -265;
+}
+.facebook{
+    top: 170;
+    left: -225;
 }
 .mail{
     top: 217;
@@ -128,25 +159,16 @@ body{
     top: 265;
     left: -181;
 }
-.facebook{
-    top: 170;
-    left: -225;
+.google{
+    top: 300;
+    left: -45;
 }
-.wiki{
-    top: 130;
-    left: -265;
+.amazon{
+    top: 350;
+    left: -90;
 }
-.instagram{
-    top: 85;
-    left: -310;
+.apple{
+    top: 400;
+    left: 0;
 }
-.snapchat{
-    top: 40;
-    left: -355;
-}
-.windows{
-    position: relative;
-    top: 500;
-    left: 600;
-    
-}
+*/
