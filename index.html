@@ -3,11 +3,28 @@
         <meta charset="utf-8">
         <title>CAMEL</title>
         <link rel="stylesheet" href="base.css">
+        <script src="jquery-3.0.0.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     </head>
     <body>
+        <iframe id=clock1 src="https://freesecure.timeanddate.com/clock/i5a6fr2k/n220/szw160/szh160/hocfff/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql17/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmc00f/mms3/mml3/mmw2/hwm2/hhcbbb/hmcddd/hsceee" frameborder="0" width="160" height="160"></iframe>
+        <div id=clock1Cover></div>
+
+
+
         <div class=taskbar></div>
-        <img class=startBtn id=startBtn onclick="startAnima()" src="http://students.ceid.upatras.gr/~lagiou/images/portfolio/windows.png" ></img>
+        <button id=btn></button>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $(".startMenu").animate({
+                        opacity: '.3',
+                        visability:
+                    });
+                });
+            });
+        </script>
+        <!--img class=startBtn id=startBtn onclick="startAnima()" src="http://students.ceid.upatras.gr/~lagiou/images/portfolio/windows.png"></img-->
 <div class=startMenu id=startMenu>
             
 <div id=user><img class=userImg style="vertical-align:middle" src="user.png">
@@ -65,6 +82,29 @@
 <!--*****************************************************-->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>                   
     <script type="text/javascript" src="app.js"></script>
 </html>
+
+
+
+
+
+<!--
+onmouseover = "this.style.backgroundColor = 'rgba(0,0,0,.5)'" onmouseout  = "this.style.backgroundColor = 'transparent'" 
+-->

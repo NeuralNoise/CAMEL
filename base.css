@@ -27,17 +27,22 @@ body{
     width: 255px;
     height: 388px;
     position: absolute;
+    /*bottom: -410px;*/
     bottom: 30px;
+    /*top: 657px;*/
     padding: 10px;
 	margin: 0px;
 	background-color: black;
-	opacity: .7;
+	/*opacity: .7;*/
+	
 	border-top-style: solid;
 	border-right-style: solid;
 	border-color: #808080;
 	border-width: .5px;
 	font-family: Ubuntu;
 	color: white;
+	font-weight: normal;
+	/*display: none;*/
 	
 	/*animation-name: anima;
     transition: 5s ease-in-out;*/
@@ -202,3 +207,34 @@ body{
 
 */
 /***************************************************************/
+
+
+#clock1{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+#clock1Cover{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    opacity: .0;
+}
+
+
+#btn{
+    width: 30px;
+    height: 30px;
+    background-image: url(http://students.ceid.upatras.gr/~lagiou/images/portfolio/windows.png);
+    background-size: 100%;
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
