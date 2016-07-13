@@ -27,14 +27,11 @@ body{
     width: 255px;
     height: 388px;
     position: absolute;
-    /*bottom: -410px;*/
     bottom: 30px;
-    /*top: 657px;*/
     padding: 10px;
 	margin: 0px;
 	background-color: black;
-	/*opacity: .7;*/
-	
+	opacity: .9;
 	border-top-style: solid;
 	border-right-style: solid;
 	border-color: #808080;
@@ -42,10 +39,6 @@ body{
 	font-family: Ubuntu;
 	color: white;
 	font-weight: normal;
-	/*display: none;*/
-	
-	/*animation-name: anima;
-    transition: 5s ease-in-out;*/
 }
 /*@keyframes anima {
     0% {
