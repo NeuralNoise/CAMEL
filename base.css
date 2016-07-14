@@ -39,6 +39,7 @@ body{
 	font-family: Ubuntu;
 	color: white;
 	font-weight: normal;
+	display: none;
 }
 /*@keyframes anima {
     0% {
@@ -111,16 +112,21 @@ body{
 .apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat {
     position: relative;
     object-fit: contain;
-    height: 40px !important;
-    width: 40px !important;
-    padding: 5px !important;
-    margin: 0px !important;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    margin: 0px;
     background-color: rgba(26, 102, 255, .1);
-    border-style: solid !important;
-    border-color: transparent !important;
-    border-width: 1px !important;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
     border-radius: 6px;
 }
+
+#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT{
+    width: ;
+}
+
 
 .apple:hover,.google:hover,.amazon:hover,.mail:hover,.youtube:hover,.facebook:hover,.wiki:hover,.instagram:hover,.snapchat:hover{
     background-color: rgba(26, 102, 255, .6);
@@ -240,3 +246,12 @@ body{
     position: relative;
 }
 */
+
+
+draggable { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    background-color: white;
+    
+}
