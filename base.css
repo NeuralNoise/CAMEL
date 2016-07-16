@@ -28,6 +28,24 @@ body{
 	opacity: .85;
 	z-index: 997;
 }
+#desktopBtn{
+    width: 5px;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	opacity: .5;
+	z-index: 997;
+	border-left-style: solid;
+	border-width: 1px;
+	border-color: #999999;
+}
+#desktopBtn:hover{
+    opacity: 1;
+}
 .startBtn{
     width: 30px;
     height: 30px;
@@ -306,4 +324,18 @@ draggable {
 
 .custom-menu li:hover {
     background-color: #DEF;
+}
+
+
+
+#gmailwidget{
+    left: 50px;
+    height: 400px;
+    width: 400px;
+}
+
+#iframe1{
+    position: absolute;
+    left: 300px;
+    top: 100px;
 }
