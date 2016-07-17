@@ -52,21 +52,34 @@ owa/" height="400px" width="400px">
 <!--div id=iframe1>
 <iframe name="iframe1" src="http://neptunecodes.weebly.com/"  width="500" height="300"></iframe>
 </div-->
+<input type=button id=test></input>
 
-<div id=bingBrowser>
+<script>
+    $(document).ready(function(){
+        $("#test,#close").click(function(){
+            $("#Browser").slideToggle(5000);
+        });
+    });
+</script>
+
+
+<div id=Browser>
   <div id=tab>
     <img id=DDG-favicon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/ddg-icon.png">
     <text id=tab-title>DuckDuckGo</text>
     <img id=close-icon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/close-icon_orig.png">
     <img id=add-icon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/add_orig.png">
   </div>
-  <button id=minamize></button>
-  <button id=maximize></button>
-  <button id=close></button>
+  <input type=button id=minamize></input>
+  <input type=button id=maximize></input>
+  <input type=button id=close></input>
   
 
   <div id=toolbar>
-    <button id=back></button>
+    <input type=button id=back></input>
+    <input type=button id=forward></input>
+    <input type=button id=reload></input>
+    <input type=text id=searchbar placeholder="Search or enter address"</input>
   </div>
   <iframe id=bing src="https://duckduckgo.com" frameborder="0"></iframe>
 </div>
@@ -76,9 +89,8 @@ owa/" height="400px" width="400px">
 
 <!--div align="center"><object width="640" height="480"><param name="movie" value="http://www.embeddablegames.net/embedgames/tennis.swf"><param name="quality" value="high"><embed src="http://www.embeddablegames.net/embedgames/tennis.swf" quality="high" width="640" height="400" type="application/x-shockwave-flash" pluginspage= "http://www.macromedia.com/go/getflashplayer"></embed></object><br/><a href="http://www.knugo.com"><strong>knugo.com</strong></a></div-->
 
-
+<span>
 <button id=btn></button>
-
 
 <script>
     $(document).ready(function(){
@@ -87,7 +99,7 @@ owa/" height="400px" width="400px">
         });
     });
 </script>
-
+</span>
 <div class=startMenu id=startMenu>
             
 <div id=user><img class=userImg style="vertical-align:middle" src="user.png">
@@ -121,7 +133,7 @@ owa/" height="400px" width="400px">
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script>
   $( function(){
-    $( "#clock,#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#bingBrowser" ).draggable();
+    $( "#clock,#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#Browser" ).draggable();
   });
   </script>
  
