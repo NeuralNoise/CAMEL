@@ -134,3 +134,18 @@ $(".custom-menu li").click(function(){
     // Hide it AFTER the action was triggered
     $(".custom-menu").hide(100);
   });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*  
+$('iframe').load( function() {
+    $('iframe').contents().find("head")
+      .append($("<style type='text/css'>  .my-class{display:none;}  </style>"));
+});
+*/

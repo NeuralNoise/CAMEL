@@ -334,8 +334,112 @@ draggable {
     width: 400px;
 }
 
-#iframe1{
+
+
+#bingBrowser{
     position: absolute;
     left: 300px;
     top: 100px;
+    height: 470;
+    width: 604;
+    background-color:#000000;
+    border: .5px solid #999999;
+    z-index: 996;
+}
+
+#tab{
+    position: absolute;
+    width: 150;
+    height: 30;
+    top: 0;
+    left: 0;
+    background-color: #262626;
+    padding:0;
+    margin:0;
+}
+#DDG-favicon{
+    position: absolute;
+    height: 15;
+    width: 15;
+    top: 10;
+    left: 10;
+    padding:0;
+    margin:0;
+}
+#tab-title{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    font-size: 12;
+    font-weight: 100;
+    font-family: Arial;
+    top: 10;
+    left: 30;
+}
+#close-icon{
+    position: absolute;
+    right: 10;
+    top: 10;
+}
+#add-icon{
+    position: absolute;
+    right: -20;
+    top: 10;    
+}
+#minamize{
+    position: absolute;
+    top: 10;
+    right: 75;
+    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/minamize-icon_orig.png);
+    height: 10px;
+    width: 10px;
+    background-size: 100%;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+}
+#maximize{
+    position: absolute;
+    top: 10;
+    right: 45;
+    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/maximize-icon_orig.png);
+    height: 10px;
+    width: 10px;
+    background-size: 100%;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+}
+#close{
+    position: absolute;
+    top: 10;
+    right: 15;
+    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/close-icon_orig.png);
+    height: 10px;
+    width: 10px;
+    background-size: 100%;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+}
+
+#toolbar{
+    position: absolute;
+    width: 604;
+    height: 37;
+    bottom: 404;
+    background-color: #262626;
+    padding:0;
+    margin:0;
+}
+#bing{
+    position: inherit;
+    margin-left: 2;
+    margin-right: 2;
+    bottom: 4;
+    height: 400;
+    width: 600;
 }
