@@ -173,7 +173,7 @@ body{
 }*/
 
 
-.apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat {
+.apple,.google,.amazon,.mail,.youtube,.facebook,.wiki,.instagram,.snapchat,.word {
     position: relative;
     object-fit: contain;
     height: 40px;
@@ -187,7 +187,7 @@ body{
     border-radius: 6px;
 }
 
-#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT{
+#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#EDGE,#WORD{
     width: 51px;
     height: 51px;
 }
@@ -197,8 +197,9 @@ body{
     border-style: none;
     padding:0;
     margin:0;
-    width: 51px;
-    height: 51px;
+    width: 50px;
+    height: 50px;
+    size: contain;
 }
 
 .apple:hover,.google:hover,.amazon:hover,.mail:hover,.youtube:hover,.facebook:hover,.wiki:hover,.instagram:hover,.snapchat:hover{
@@ -283,14 +284,14 @@ body{
 
 #clock1{
     position: absolute;
-    top: 30px;
-    right: 40px;
+    top: 40px;
+    right: 20px;
 }
 
 #clock1Cover{
     position: absolute;
-    top: 30px;
-    right: 40px;
+    top: 40px;
+    right: 20px;
     width: 160px;
     height: 160px;
     background-color: white;
@@ -521,19 +522,6 @@ draggable {
     height: 400;
     width: 600;
 }
-
-#test{
-    width: 100;
-    height: 100;
-    background-color: red;
-    position: absolute;
-    top: 100;
-    left: 100;
-    z-index: 1000;
-}
-
-
-
 
 
 #ActionCenter{
