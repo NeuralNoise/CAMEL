@@ -138,6 +138,10 @@ $(".custom-menu li").click(function(){
   
   
   
+function refreshBrowser() {
+    var ifr = document.getElementsByName('Browser')[0];
+    ifr.src = ifr.src;
+}
 
   
   

@@ -31,6 +31,20 @@ body{
 	opacity: .85;
 	z-index: 997;
 }
+#ActionCenter-btn{
+    width: 15;
+    height: 15;
+    position: absolute;
+    bottom: 0;
+    right: 100;
+    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/action-center_orig.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    border-style: none;
+    padding:15;
+    margin:0;
+}
 #desktopBtn{
     width: 5px;
 	height: 30px;
@@ -178,6 +192,14 @@ body{
     height: 51px;
 }
 
+#Edge-Btn{
+    position: relative;
+    border-style: none;
+    padding:0;
+    margin:0;
+    width: 51px;
+    height: 51px;
+}
 
 .apple:hover,.google:hover,.amazon:hover,.mail:hover,.youtube:hover,.facebook:hover,.wiki:hover,.instagram:hover,.snapchat:hover{
     background-color: rgba(26, 102, 255, .6);
@@ -348,6 +370,7 @@ draggable {
     background-color:#000000;
     border: .5px solid #999999;
     z-index: 996;
+    display: none;
 }
 #tab{
     position: absolute;
@@ -507,4 +530,40 @@ draggable {
     top: 100;
     left: 100;
     z-index: 1000;
+}
+
+
+
+
+
+#ActionCenter{
+    height: 100%;
+    width: 350;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    bottom: 30;
+    padding: 0;
+    margin:0;
+    display: none;
+    
+}
+#AC-title{
+    
+}
+#testing{
+    position: relative;
+    width: 330;
+    height: 150;
+    padding: 0;
+    margin: 10;
+    top: 30;
+    left: 0;
+    z-index: 1000;
+
+}
+
+    
+    
 }

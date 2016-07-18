@@ -22,7 +22,17 @@
         <div id=clock1Cover></div>
         </div>
         
-        <div class=taskbar></div>
+        <script>
+    $(document).ready(function(){
+        $("#ActionCenter-btn").click(function(){
+            $("#ActionCenter").animate({'width': 'toggle'});
+        });
+    });
+</script>
+        
+        <div class=taskbar>
+          <button id=ActionCenter-btn></button>
+        </div>
         <div id=desktopBtn></div>
 
 <!--script>
@@ -56,8 +66,8 @@ owa/" height="400px" width="400px">
 
 <script>
     $(document).ready(function(){
-        $("#test,#close").click(function(){
-            $("#Browser").slideToggle(5000);
+        $("#test,#close,#EDGE").click(function(){
+            $("#Browser").slideToggle(100);
         });
     });
 </script>
@@ -76,12 +86,18 @@ owa/" height="400px" width="400px">
   
 
   <div id=toolbar>
-    <input type=button id=back></input>
-    <input type=button id=forward></input>
-    <input type=button id=reload></input>
+    <!--input type=button id=back></input-->
+    <FORM><INPUT id=back Type="button" onClick="history.go(-1);return true;"></FORM>
+    <!--input type=button id=forward></input-->
+    <FORM><INPUT id=forward Type="button" onClick="history.go(1);return true;"></FORM>
+    <!--input type=button id=reload></input-->
+    <!--FORM><INPUT id=reload TYPE="button" onClick="history.go(0)"></FORM-->
+    
+    <button id=reload onclick="refreshBrowser();"></button>
+    
     <input type=text id=searchbar placeholder="Search or enter address"</input>
   </div>
-  <iframe id=bing src="https://duckduckgo.com" frameborder="0"></iframe>
+  <iframe name=Browser id=bing src="https://duckduckgo.com" frameborder="0"></iframe>
 </div>
 <!--iframe src="/redirect.php?url=http://www.example.com/"></iframe-->
 
@@ -94,7 +110,7 @@ owa/" height="400px" width="400px">
 
 <script>
     $(document).ready(function(){
-        $("button").click(function(){
+        $("#btn").click(function(){
             $(".startMenu").slideToggle(100);
         });
     });
@@ -133,11 +149,14 @@ owa/" height="400px" width="400px">
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script>
   $( function(){
-    $( "#clock,#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#Browser" ).draggable();
+    $( "#clock,#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#Browser,#EDGE" ).draggable();
   });
   </script>
  
 <ol id=selectable>
+<div id=EDGE>
+  <img id=Edge-Btn src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/edge_1_orig.png"></img>
+</div>
 <div id=APPLE><a href="http://www.apple.com/" target="_blank">
 <img class=apple src="http://blogmobility.pl/wp-content/uploads/2016/04/apple.png" alt="Apple"></img></a></div>
 <div id=GOOGLE><a href="https://www.google.com/" target="_blank">
@@ -181,6 +200,17 @@ owa/" height="400px" width="400px">
   </script>
 
 <!------------------------------------>
+
+<div id=ActionCenter>
+  <text id=AC-title>ACTION CENTER</text>
+  <div id=testing>
+  <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "https://news.google.com/news/feeds?output=rss",rssmikle_frame_width: "330",rssmikle_frame_height: "150",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Ubuntu",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "4",mcspeed: "10",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#000000",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "transparent",rssmikle_item_bgimage: "",rssmikle_item_title_length: "50",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:330px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;"></a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
+  </div>
+</div>  
+
+
+
+
 
 
     </body>                   
