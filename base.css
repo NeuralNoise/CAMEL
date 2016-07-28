@@ -13,7 +13,7 @@ html{
 
 body{
     /*background-image: url(http://wallpaper.zone/img/2012370.jpg);*/
-    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/background1_orig.jpg);
+    background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/windows-10-stock-wallpapers-desktop-background_orig.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,11 +157,11 @@ body{
     font-size: 14;
 }
 /*on hover highlight startmenu links background color*/
-#user:hover,.google2:hover, #google2:hover, .gmail2:hover, #gmail2:hover, .youtube2:hover, #youtube2:hover, .settings:hover, #settings:hover, .power:hover, #power:hover{
+#user:hover,.google2:hover, #google2:hover, .gmail2:hover, #gmail2:hover, .youtube2:hover, #youtube2:hover, .settings:hover, #settings:hover, .power:hover, #power:hover, #restart:hover{
     background-color: #4d4d4d;
 }
 /*spacing (margin) and sizing around startmenu links*/
-.google2,.gmail2,.youtube2,.settings,.power{
+.google2,.gmail2,.youtube2,.settings,.power,.restart{
     margin: 5px;
     width:20px; 
     height:20px;
@@ -414,42 +414,57 @@ draggable {
 }
 #minamize{
     position: absolute;
-    top: 10;
-    right: 75;
+    top: 0;
+    right: 60;
     background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/minamize-icon_orig.png);
     height: 10px;
     width: 10px;
-    background-size: 100%;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    padding:0;
+    padding:14;
     margin:0;
+}
+#minamize:hover{
+    background-color: rgb(26, 26, 26);
 }
 #maximize{
     position: absolute;
-    top: 10;
-    right: 45;
+    top: 0;
+    right: 30;
     background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/maximize-icon_orig.png);
     height: 10px;
     width: 10px;
-    background-size: 100%;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    padding:0;
+    padding:14;
     margin:0;
+}
+#maximize:hover{
+    background-color: rgb(26, 26, 26);
 }
 #close{
     position: absolute;
-    top: 10;
-    right: 15;
+    top: 0;
+    right: 0;
     background-image: url(http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/close-icon_orig.png);
     height: 10px;
     width: 10px;
-    background-size: 100%;
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: transparent;
     border-style: none;
-    padding:0;
+    padding:14;
     margin:0;
+}
+#close:hover{
+    background-color: rgb(26, 26, 26);
 }
 #toolbar{
     position: absolute;
