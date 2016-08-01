@@ -1,244 +1,42 @@
 <html lang="eg">
     <head>
         <meta charset="utf-8">
-        <meta name=viewport content="width=700">
-        <title>Windows 10 - Sim</title>
-        <link rel="stylesheet" href="base.css">
+        <title>Blue Screen</title>
+        <link rel="stylesheet" href="fullscreen.css">
         <script src="jquery-3.0.0.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata">
     </head>
     <body>
-
-      <div id=LogInPage>
-        
-      </div>
-
-
-
-
-
-<ul class='custom-menu'>
-  <li data-action="first">View</li>
-  <li data-action="second">Sort by</li>
-  <li data-action="Refresh">Third thing</li>
-</ul>
-
-        
-        
-        <div id=clock>
-        <iframe id=clock1 src="https://freesecure.timeanddate.com/clock/i5a6fr2k/n220/szw160/szh160/hocfff/hbw0/hfc000/cf100/hgr0/fav0/fiv0/mqcfff/mql17/mqw4/mqd94/mhcfff/mhl15/mhw4/mhd94/mmc00f/mms3/mml3/mmw2/hwm2/hhcbbb/hmcddd/hsceee" frameborder="0" width="160" height="160"></iframe>
-        <div id=clock1Cover></div>
+        <div id=bluescreen-1-text>
+            <!--p>
+                A problem has been detected and Windows has been shut down to prevent damage to your computer. <br><br>If this is the first time you've seen this stop error screen,<br>restart your computer. If this screen appears again, follow<br>these steps: <br><br>Check to make sure any new hardware or software is properly installed.<br>If this is a new installation, ask your hardware or software manufacturer<br>for any Windows updates you might need.<br><br> If problems continue, disable or remove any newly installed hardware<br>or software. Disable BIOS memory options such as caching or shadowing.<br>If you need to use Safe Mode to remove or disable components, restart<br>your computer, press F8 to select Advanced Startup Options, and then<br>select Safe Mode<br><br>Technical information:<br><br>*** STOP: 0x00000050 (0xFD3094C2,0x00000001,0xFBFE7617,0x00000000)
+            </p-->
+            <p id=pic>
+                :(
+            </p>
+            <p id=error>
+                Your PC ran into a problem and needs you to take action. <br>We're just going to wait until you do something.
+            </p>
+            <p id=fix>
+                To fix this problem: You need to go into <span id=full>FULLSCREEN</span> mode in your browser.
+            </p>
+            <p id=more>
+                If you'd like to know more, you can search online to find out how to put your internet browser in FULLSCREEN mode.
+            </p>
         </div>
+        <a href="LoginPage.html">
+            <input id=done type="button" value="Done"/>
+        </a>
         
-        <script>
-    $(document).ready(function(){
-        $("#ActionCenter-btn").click(function(){
-            $("#ActionCenter").animate({'width': 'toggle'});
-        });
-    });
-</script>
+        <!--div class="done">
+            <span class="done">
+                Done
+            </span>
+            <span>
+                Skip
+            </span>
+        </div-->    
         
-        <div class=taskbar>
-          <button id=ActionCenter-btn></button>
-        </div>
-        <div id=desktopBtn></div>
-
-<!--script>
-  (function() {
-    var cx = '002372628618996414167:c08unb2rum0';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search-->
-
-
-<!--div id=gmailwidget>
-owa/" height="400px" width="400px"> 
-<embed src="https://outlook.live.com/owa/" height="400px" width="400px"></embed> 
-</object>
-</div-->
-
-<!--iframe id=gmailwidget src="http://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgIDK553HCgw/edit" frameborder="0" width="400" height="400"></iframe-->
-
-
-<!--iframe id="if1" width="autoScroll" height="autoScroll" style="vis ibility:visible" src="https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgIDK553HCgw/edit"></iframe-->
-<!--div id=iframe1>
-<iframe name="iframe1" src="http://neptunecodes.weebly.com/"  width="500" height="300"></iframe>
-</div-->
-
-
-<script>
-    $(document).ready(function(){
-        $("#close").click(function(){
-            $("#Browser").slideToggle(100);
-        });
-    });
-</script>
-<script>
-    $(document).ready(function(){
-        $("#EDGE").click(function(){
-            $("#Browser").slideDown(100);
-        });
-    });
-</script>
-
-
-
-<div id=Browser>
-  <div id=tab>
-    <img id=DDG-favicon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/ddg-icon.png">
-    <text id=tab-title>DuckDuckGo</text>
-    <img id=close-icon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/close-icon_orig.png">
-    <img id=add-icon src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/add_orig.png">
-  </div>
-  <input type=button id=minamize></input>
-  <input type=button id=maximize></input>
-  <input type=button id=close></input>
-  
-
-  <div id=toolbar>
-    <!--input type=button id=back></input-->
-    <FORM><INPUT id=back Type="button" onClick="history.go(-1);return true;"></FORM>
-    <!--input type=button id=forward></input-->
-    <FORM><INPUT id=forward Type="button" onClick="history.go(1);return true;"></FORM>
-    <!--input type=button id=reload></input-->
-    <!--FORM><INPUT id=reload TYPE="button" onClick="history.go(0)"></FORM-->
-    
-    <button id=reload onclick="refreshBrowser();"></button>
-    
-    <input type=text id=searchbar placeholder="Search or enter address"</input>
-  </div>
-  <iframe name=Browser id=bing src="https://www.duckduckgo.com" frameborder="0"></iframe>
-</div>
-<!--iframe src="/redirect.php?url=http://www.example.com/"></iframe-->
-
-
-<!--Gimp
-https://www.rollapp.com/client?sessionId=dcba5340-b4fe-4e58-9b60-18dd30718987
-
-https://www.rollapp.com/client?sessionId=15efbdcb-f42c-466e-9d4d-33bbebcfcc6c
--->
-
-
-<!--div align="center"><object width="640" height="480"><param name="movie" value="http://www.embeddablegames.net/embedgames/tennis.swf"><param name="quality" value="high"><embed src="http://www.embeddablegames.net/embedgames/tennis.swf" quality="high" width="640" height="400" type="application/x-shockwave-flash" pluginspage= "http://www.macromedia.com/go/getflashplayer"></embed></object><br/><a href="http://www.knugo.com"><strong>knugo.com</strong></a></div-->
-
-<span>
-<button id=btn></button>
-
-<script>
-    $(document).ready(function(){
-        $("#btn").click(function(){
-            $(".startMenu").slideToggle(100);
-        });
-    });
-</script>
-</span>
-<div class=startMenu id=startMenu>
-            
-<div id=user><img class=userImg style="vertical-align:middle" src="user.png">
-<span class=userTxt style="">user</div>
-            
-<p class=mostUsed>most used</p>
-            
-<div id=google2><a href="https://www.google.com/" target="_blank"><img class=google2 style="vertical-align:middle" src="https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"></a>
-<span class=google2txt style="">Google</div>
-            
-<div id=gmail2><a href="https://gmail.google.com" target="_blank"><img class=gmail2 style="vertical-align:middle" src="https://lh6.ggpht.com/8-N_qLXgV-eNDQINqTR-Pzu5Y8DuH0Xjz53zoWq_IcBNpcxDL_gK4uS_MvXH00yN6nd4=w300"></a>
-<span class=gmail2txt style="">Gmail</div>
-            
-<div id=youtube2><a href="https://www.youtube.com/" target="_blank"><img class=youtube2 style="vertical-align:middle" src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300"></a>
-<span class=youtube2txt style="">YouTube</div>
-            
-<div class=spacer1></div>
-            
-<div id=settings><!--a href="undefined" target="_blank"--><img class=settings style="vertical-align:middle" src="http://www.iconsdb.com/icons/preview/white/settings-xxl.png"><!--/a-->
-<span class=settingstxt style="">Settings</div>
-            
-<div id=power><a href="LoginPage.html"><img class=power style="vertical-align:middle" src="http://www.iconsdb.com/icons/preview/white/power-xxl.png"></a>
-<span class=powertxt style="">Power</div>
-
-<div id=restart><a href="fullscreen.html"><img class=restart style="vertical-align:middle" src="http://www.iconsdb.com/icons/preview/white/power-xxl.png"></a>
-<span class=powertxt style="">Restart</div>
-            
-</div>
-        
-        
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-<script>
-  $( function(){
-    $( "#clock,#APPLE,#GOOGLE,#AMAZON,#GMAIL,#YOUTUBE,#FACEBOOK,#WIKIPEDIA,#INSTAGRAM,#SNAPCHAT,#Browser,#EDGE,#WORD" ).draggable();
-  });
-  </script>
- 
-<ol id=selectable>
-<div id=EDGE>
-  <img id=Edge-Btn src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/edge_1_orig.png"></img>
-</div>
-<div id=APPLE><a href="http://www.apple.com/" target="_blank">
-<img class=apple src="http://blogmobility.pl/wp-content/uploads/2016/04/apple.png" alt="Apple"></img></a></div>
-<div id=GOOGLE><a href="https://www.google.com/" target="_blank">
-<img class=google src="https://images.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" alt="Google"></img></a></div>
-<div id=AMAZON><a href="https://www.amazon.com/" target="_blank">
-<img class=amazon src="http://www.santacruztechbeat.com/wp-content/uploads/2015/04/Amazon_logo-8.png" alt="Amazon"></img></a></div>
-<div id=GMAIL><a href="https://gmail.google.com" target="_blank">
-<img class=mail src="https://lh6.ggpht.com/8-N_qLXgV-eNDQINqTR-Pzu5Y8DuH0Xjz53zoWq_IcBNpcxDL_gK4uS_MvXH00yN6nd4=w300" alt="Gmail"></img></a></div>
-<div id=YOUTUBE><a href="https://www.youtube.com/" target="_blank">
-<img class=youtube src="https://lh5.ggpht.com/jZ8XCjpCQWWZ5GLhbjRAufsw3JXePHUJVfEvMH3D055ghq0dyiSP3YxfSc_czPhtCLSO=w300" alt="YouTube"></img></a></div>
-<div id=FACEBOOK><a href="https://www.facebook.com/" target="_blank">
-<img class=facebook src="http://italian-grill.co.uk/wp-content/uploads/2013/10/facebook-icon-300x300.png" alt="Facebook"></img></a></div>
-<div id=WIKIPEDIA><a href="https://www.wikipedia.org/" target="_blank">
-<img class=wiki src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1122px-Wikipedia-logo-v2.svg.png" alt="Wikipedia"></img></a></div>
-<div id=INSTAGRAM><a href="https://www.instagram.com/?hl=en" target="_blank">
-<img class=instagram src="https://lh3.googleusercontent.com/aYbdIM1abwyVSUZLDKoE0CDZGRhlkpsaPOg9tNnBktUQYsXflwknnOn2Ge1Yr7rImGk=w300" alt="Instagram"></img></a></div>
-<div id=SNAPCHAT><a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" target="_blank">
-<img  class=snapchat src="http://cdn.dizkover.com/upload/img/orig/1-142411756098-snapchat-icon.png" alt="Snapchat"></img></a></div>
-<div id=WORD><a href="https://office.live.com/start/Word.aspx?omkt=en-IE#" target="_blank"><img class=word src="http://neptunecodes.weebly.com/uploads/2/4/1/0/24105822/word_orig.png" alt="Word"></img></a></div>
-</ol>
-
-
-<!------------------------------------>
-
-
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
- 
-  <style>
-  #feedback { font-size: 1.4em; }
-  #selectable .ui-selecting { background: rgba(102, 179, 255, .6); }
-  #selectable .ui-selected { background: rgba(102, 179, 255, 1); color: white; }
-  #selectable { list-style-type: none; margin: 0; padding: 0; width: 100%; height: 100%; }
-  #selectable li { margin: 3px; padding: 1px; float: left; width: 100%; height: 100%;}
-  </style>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#selectable" ).selectable();
-  } );
-  </script>
-
-<!------------------------------------>
-
-<div id=ActionCenter>
-  <text id=AC-title>ACTION CENTER</text>
-  <div id=testing>
-  <!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "https://news.google.com/news/feeds?output=rss",rssmikle_frame_width: "330",rssmikle_frame_height: "150",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Ubuntu",rssmikle_font_size: "12",rssmikle_border: "off",responsive: "off",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "on",scrolldirection: "up",scrollstep: "4",mcspeed: "10",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#000000",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "transparent",rssmikle_item_bgimage: "",rssmikle_item_title_length: "50",rssmikle_item_title_color: "#FFFFFF",rssmikle_item_border_bottom: "on",rssmikle_item_description: "title_only",item_link: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "off",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "15",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; width:330px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;"></a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
-  </div>
-</div>  
-
-
-
-
-
-
-    </body>                   
-    <script type="text/javascript" src="app.js"></script>
+    </body>
+    <!--script type="text/javascript" src=""></script-->
 </html>
