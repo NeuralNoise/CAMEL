@@ -372,6 +372,8 @@ draggable {
     border: .5px solid #999999;
     z-index: 996;
     display: none;
+    resize: both;
+    overflow: auto;
 }
 #tab{
     position: absolute;
